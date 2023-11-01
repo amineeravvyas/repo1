@@ -1,0 +1,15 @@
+---
+- name: Install and configure nginx for static website hosting
+  hosts: all
+  become: true
+
+  tasks:
+    - name: Install apache
+      apt:
+        name: httpd
+        state: latest
+
+    - name: Start Service
+      apt:
+        name: httpd
+        state: present
