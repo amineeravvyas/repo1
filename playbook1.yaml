@@ -9,7 +9,7 @@
         name: httpd # this is name of apache service
         state: latest
 
-    - name: Start Service
+    - name: Start Service #starting the service
       apt:
         name: httpd
         state: present
