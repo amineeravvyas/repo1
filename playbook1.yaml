@@ -6,7 +6,7 @@
   tasks:
     - name: Install apache
       apt:
-        name: httpd
+        name: httpd # this is name of apache service
         state: latest
 
     - name: Start Service
